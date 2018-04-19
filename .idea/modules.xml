@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Accountancy/Accountancy.iml" filepath="$PROJECT_DIR$/Accountancy/Accountancy.iml" />
       <module fileurl="file://$PROJECT_DIR$/Diagnose Room/Diagnose Room.iml" filepath="$PROJECT_DIR$/Diagnose Room/Diagnose Room.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Doctor-House-Hospital.iml" filepath="$PROJECT_DIR$/.idea/Doctor-House-Hospital.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hospital Admission/Hospital Admission.iml" filepath="$PROJECT_DIR$/Hospital Admission/Hospital Admission.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Nursery/Nursery.iml" filepath="$PROJECT_DIR$/Nursery/Nursery.iml" />
     </modules>
   </component>
 </project>

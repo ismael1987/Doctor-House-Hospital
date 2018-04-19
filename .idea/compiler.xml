@@ -6,13 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Accountancy" />
         <module name="Diagnose Room" />
         <module name="Hospital Admission" />
+        <module name="Nursery" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Accountancy" target="9" />
       <module name="Diagnose Room" target="9" />
       <module name="Hospital Admission" target="9" />
+      <module name="Nursery" target="9" />
     </bytecodeTargetLevel>
   </component>
 </project>

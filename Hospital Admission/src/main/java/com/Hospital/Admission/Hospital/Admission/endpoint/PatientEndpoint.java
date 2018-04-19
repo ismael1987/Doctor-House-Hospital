@@ -3,7 +3,6 @@ package com.Hospital.Admission.Hospital.Admission.endpoint;
 
 
 import com.Hospital.Admission.Hospital.Admission.model.Patient;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 

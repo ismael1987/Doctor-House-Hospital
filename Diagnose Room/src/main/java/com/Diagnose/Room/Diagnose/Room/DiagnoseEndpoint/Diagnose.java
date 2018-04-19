@@ -2,6 +2,7 @@ package com.Diagnose.Room.Diagnose.Room.DiagnoseEndpoint;
 
 import com.Diagnose.Room.Diagnose.Room.model.Patient;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,10 +24,13 @@ public class Diagnose {
         return patients;
     }
 
-    @PostMapping("/diagnose") // Posted From Hospital name + id
+    @PostMapping("/diagnose")
      void setPatient(@RequestBody Patient patient){
        Patient checked = doctor.check(patient);
        patients.add(checked);
+        RestTemplate restTemplate = new RestTemplate();
+        restTemplate.postForEntity("http://localhost:9008/patients",checked ,Patient.class);
+
      }
 
 

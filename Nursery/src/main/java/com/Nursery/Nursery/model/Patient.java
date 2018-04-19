@@ -1,15 +1,20 @@
-package com.Diagnose.Room.Diagnose.Room.model;
+package com.Nursery.Nursery.model;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.stereotype.Component;
-
 import java.util.List;
 
+@Document
 @Component
 public class Patient {
-   private String id;
-   private String name;
-   private String illnes;
-   private List<String> symptoms;
+
+    @Id
+    private String id;
+    private String name;
+    private String illness;
+    private List<String> symptoms;
+    private String treatment;
 
     public Patient() {
     }
@@ -30,14 +35,6 @@ public class Patient {
         this.name = name;
     }
 
-    public String getIllnes() {
-        return illnes;
-    }
-
-    public void setIllnes(String illnes) {
-        this.illnes = illnes;
-    }
-
     public List<String> getSymptoms() {
         return symptoms;
     }
@@ -46,13 +43,31 @@ public class Patient {
         this.symptoms = symptoms;
     }
 
+    public String getTreatment() {
+        return treatment;
+    }
+
+    public void setTreatment(String treatment) {
+        this.treatment = treatment;
+    }
+
+
+    public String getIllness() {
+        return illness;
+    }
+
+    public void setIllness(String illness) {
+        this.illness = illness;
+    }
+
     @Override
     public String toString() {
         return "Patient{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
-                ", illnes='" + illnes + '\'' +
+                ", illness='" + illness + '\'' +
                 ", symptoms=" + symptoms +
+                ", treatment='" + treatment + '\'' +
                 '}';
     }
 }
